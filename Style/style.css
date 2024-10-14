@@ -1,4 +1,6 @@
-p
+.nav
 {
-    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    background-color: #6CC551;
 }
