@@ -4,14 +4,14 @@ body {
 
 header {
     background-color: #6CC551;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
 }
 
 nav {
     background-color: #6CC551;
     width: 100vw;
-    height: 15%;
+    height: auto;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -21,8 +21,8 @@ nav {
 }
 
 nav img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: auto;
     margin-left: 20px; 
 }
 
@@ -31,13 +31,13 @@ ul {
     margin: 0 auto; 
     padding: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: space-around; 
     align-items: center;
     width: 100%; 
 }
 
 ul li a {
-    margin-right: 80px;
+    margin-right: 20px;
     background-color: #52AD9C;
     border-radius: 20px;
     color: #FFF;
@@ -99,14 +99,36 @@ main {
     background-color: white;
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
+}
+
+.mensaje-imagen
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .mensaje
 {
     width: 40vw;
+    max-height: 100%;
     padding:150px;
     font-size: 20pt;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: left;
+}
+.imagen
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
 }
