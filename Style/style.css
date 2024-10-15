@@ -100,3 +100,13 @@ main {
     width: 100vw;
     height: 100vh;
 }
+
+.mensaje
+{
+    width: 40vw;
+    padding:150px;
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: left;
+}
