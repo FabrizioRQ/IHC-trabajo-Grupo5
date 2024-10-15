@@ -76,22 +76,26 @@ ul li ul
     min-width: 150px;
 }
 
-        ul li:hover ul {
-            display: block;
-        }
+ul li:hover ul 
+{
+    display: block;
+}
 
-        ul li ul li {
-            position: relative;
-        }
+ul li ul li 
+{
+    position: relative;
+}
 
-            ul li ul li ul {
-                right: -140px;
-                top: 8px;
-            }
+ul li ul li ul 
+{
+    right: -140px;
+    top: 8px;
+}
 
-    ul > li {
-        float: left;
-    }
+ul > li
+{
+    float: left;
+}
 
 main
 {
