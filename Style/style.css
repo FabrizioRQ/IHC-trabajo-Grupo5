@@ -1,10 +1,22 @@
 body{
     margin: 0;
 }
-
+header
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #6CC551;
+}
 .nav
 {
     width: 100px;
-    height: 100px;
-    background-color: #6CC551;
+    height: 50px;
+    background-color: blue;
+}
+
+main
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF;
 }
