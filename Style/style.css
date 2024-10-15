@@ -66,12 +66,13 @@ ul li:hover ul {
     list-style: none;
     display: none;
     width: 200px;
+    margin-top: 2px;
     background-color: transparent;
 }
 
 .menu-vertical li a {
     display: block;
-    color: red;
+    color: #000;
     padding: 15px 15px 15px 20px;
     text-decoration: none;
 }
