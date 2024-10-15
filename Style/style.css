@@ -1,22 +1,67 @@
-body{
-    margin: 0;
-}
-header
-{
-    width: 100vw;
-    height: 100vh;
-    background-color: #6CC551;
-}
-.nav
-{
-    width: 100px;
-    height: 50px;
-    background-color: blue;
+/* Estilos para la barra de menú */
+nav {
+    background-color: #00cc66; /* Color de fondo verde */
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
-main
-{
-    width: 100vw;
-    height: 100vh;
-    background-color: #FFF;
+    /* Estilos para la imagen del logotipo */
+    nav img {
+        margin-right: 20px;
+    }
+
+/* Estilos para la lista del menú */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
+
+    /* Estilos para los elementos del menú */
+    ul li {
+        margin-right: 20px;
+    }
+
+        /* Enlaces del menú */
+        ul li a {
+            background: green;
+            color: white;
+            text-decoration: none;
+            padding: 10px 12px;
+            display: block;
+        }
+
+            ul li a:hover {
+                background: white;
+                color: black;
+            }
+            /* Flecha hacia abajo en los elementos del menú */
+            ul li a::after {
+                content: " ▼";
+            }
+
+
+        ul li ul {
+            display: none;
+            position: absolute;
+            min-width: 150px;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        ul li ul li {
+            position: relative;
+        }
+
+            ul li ul li ul {
+                right: -140px;
+                top: 8px;
+            }
+
+    ul > li {
+        float: left;
+    }
