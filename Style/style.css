@@ -1,53 +1,80 @@
+body 
+{
+    margin:0;
+}
+
+header
+{
+    background-color:#6CC551;
+    width: 100vw;
+    height: 100vh;
+}
 /* Estilos para la barra de menú */
-nav {
-    background-color: #00cc66; /* Color de fondo verde */
+nav
+{
+    background-color: #6CC551;
+    width: 100vw;
+    height: 15%;
     padding: 10px;
     display: flex;
     align-items: center;
+    position: fixed;
+    box-shadow: 0px 0px 10px 10px black;
 }
 
     /* Estilos para la imagen del logotipo */
-    nav img {
-        margin-right: 20px;
-    }
+nav img
+{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
 
 /* Estilos para la lista del menú */
-ul {
+ul 
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-    /* Estilos para los elementos del menú */
-    ul li {
-        margin-right: 20px;
-    }
+/* Estilos para los elementos del menú */
+ul li 
+{
+    margin-right: 20px;
+}
 
-        /* Enlaces del menú */
-        ul li a {
-            background: green;
-            color: white;
-            text-decoration: none;
-            padding: 10px 12px;
-            display: block;
-        }
+/* Enlaces del menú */
+ul li a
+{
+    background-color: #52AD9C;
+    border-radius:20px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: flex;
+}
 
-            ul li a:hover {
-                background: white;
-                color: black;
-            }
-            /* Flecha hacia abajo en los elementos del menú */
-            ul li a::after {
-                content: " ▼";
-            }
+ul li a:hover 
+{
+    background: #FFF;
+    color: #000;
+}
+
+ /* Flecha hacia abajo en los elementos del menú */
+ul li a::after 
+{
+    content: " ▼";
+}
 
 
-        ul li ul {
-            display: none;
-            position: absolute;
-            min-width: 150px;
-        }
+ul li ul 
+{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
 
         ul li:hover ul {
             display: block;
@@ -65,3 +92,10 @@ ul {
     ul > li {
         float: left;
     }
+
+main
+{
+    background-color:white;
+    width: 100vw;
+    height: 100vh;
+}
