@@ -81,6 +81,16 @@ ul li:hover ul {
     background-color: black;
 }
 
+.inicio-sesion{
+    background-color: #47624f;
+}
+
+.registrarse{
+    background-color: #9FFCDF;
+    color:#000;
+}
+
+
 ul > li {
     float: left;
 }
