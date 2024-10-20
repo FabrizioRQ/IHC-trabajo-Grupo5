@@ -1,0 +1,50 @@
+
+body {
+    background-color: #6CC551;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.contenedor {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+
+.ingresar {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.registro {
+    background-color: #a3f5a3;
+    color: #333333;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.registro:hover {
+    background-color: #8ee48e;
+}
