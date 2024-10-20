@@ -379,3 +379,78 @@ button:hover {
 .articulo a:hover {
     text-decoration: underline;
 }
+
+.subcripciones {
+    background-color: #6CC551;
+    padding: 20px;
+    text-align: center;
+}
+
+.subcripciones h2 {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.subcripciones p {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.subcripciones form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.subcripciones form button {
+    padding: 10px 20px;
+    background-color: #9FFCDF;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-extra {
+    background-color: #47624f;
+    padding: 20px;
+    color: white;
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo2 {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.info-extra2 {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+}
