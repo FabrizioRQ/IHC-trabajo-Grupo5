@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoGrow </title>
+    <title>Inicio Sesión</title>
     <link rel="stylesheet" href="Style/style2.css">
     <link rel="icon" href="Imagenes/Logo.jpg" type="image/png">
 </head>
 <body>
-    <img  src="Imagenes/Logo.jpg" alt="logo">
-    <input type="text" placeholder="Ingrese su gmail o nombre de usuario" name="nombre"/>
-    <input type="password" placeholder="Ingrese su contraseña" name="contraseña"/>
+    <div class="contenedor">
+        <img class="logo" src="Imagenes/Logo.jpg" alt="logo">
+        <form>
+            <input type="text" placeholder="Ingrese su gmail o nombre de usuario" name="nombre" class="ingresar" required/>
+            <input type="password" placeholder="Ingrese su contraseña" name="contraseña" class="ingresar" required/>
+            <div class="conectado">
+                <label>
+                    Permanecer conectado?
+                    <input type="checkbox">
+                </label>
+            </div>
+            <button type="submit" class="loguear">Inicio Sesión</button>
+            <a href="#" class="contraseña">Recuperar contraseña?</a>
+            <button type="button" class="registro">Registrarse</button>
+        </form>
+    </div>
 </body>
 </html>

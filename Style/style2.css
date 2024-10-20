@@ -1,4 +1,88 @@
-body{
+
+body {
     background-color: #6CC551;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
+
+.contenedor {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+
+.ingresar {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.conectado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+
+.loguear {
+    background-color: #555555;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.loguear:hover {
+    background-color: #444444;
+}
+
+
+.contraseña {
+    display: block;
+    margin: 10px 0;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.contraseña:hover {
+    text-decoration: underline;
+}
+
+.registro {
+    background-color: #a3f5a3;
+    color: #333333;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.registro:hover {
+    background-color: #8ee48e;
+}
