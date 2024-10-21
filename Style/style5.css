@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+.container {
+    background-color: #447604; 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 400px;
+}
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #9FFCDF; 
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 4px;
+}
