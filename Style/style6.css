@@ -52,3 +52,9 @@ body {
     font-size: 24px;
     color: white;
 }
+
+.link
+{
+    text-decoration: none;
+    color:black;
+}
