@@ -1,3 +1,87 @@
-body{
-    background-color: green;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e6e25;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header img {
+    width: 60px;
+    height: auto;
+}
+.header h1 {
+    font-size: 24px;
+    color: black;
+}
+.search-container {
+    position: relative;
+}
+.search-container input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+.search-container .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.settings-icon {
+    width: 30px;
+    cursor: pointer;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #367B2A;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+.menu button {
+    background-color: #A7FFEB;
+    color: #000;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu button:hover {
+    background-color: #82C9B7;
+}
+.menu button img {
+    width: 24px;
+    height: auto;
+}
+.main-content {
+    width: calc(100% - 350px);
+    text-align: center;
+    background-color: #295E21;
+    padding: 20px;
+    border-radius: 10px;
+}
+.main-content img {
+    width: 100%;
+    border-radius: 20px;
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +11,12 @@
 <body>
     <div class="contenedor">
         <img class="logo" src="Imagenes/Logo.jpg" alt="logo">
-        <form>
+        <form id="formLogin"> 
             <input type="text" placeholder="Ingrese su gmail o nombre de usuario" name="nombre" class="ingresar" required/>
             <input type="password" placeholder="Ingrese su contraseña" name="contraseña" class="ingresar" required/>
             <div class="conectado">
                 <label>
-                    Permanecer conectado?
+                    ¿Permanecer conectado?
                     <input type="checkbox">
                 </label>
             </div>
@@ -24,5 +25,30 @@
             <a href="registro.html" class="registro">Registrarse</a>
         </form>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('formLogin').addEventListener('submit', function (e) {
+                e.preventDefault();
+    
+                let nombreIngresado = document.querySelector('input[name="nombre"]').value;
+                let contraseñaIngresada = document.querySelector('input[name="contraseña"]').value;
+    
+                let usuario = JSON.parse(localStorage.getItem('usuario'));
+    
+                if (usuario) {
+                    if (usuario.nombre === nombreIngresado && usuario.contraseña === contraseñaIngresada) {
+                        alert('Inicio de sesión exitoso!');
+                        window.location.href = 'bienvenida.html';
+                    } else {
+                        alert('Nombre de usuario o contraseña incorrectos');
+                    }
+                } else {
+                    alert('No hay usuarios registrados');
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>

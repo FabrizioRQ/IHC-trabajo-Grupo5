@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
 <body>
     <div class="contenedor">
         <img class="logo" src="Imagenes/Logo.jpg" alt="logo">
-        <form>
+        <form id="formRegistro">
             <input type="text" placeholder="Digite su nombre:" name="nombre" class="ingresar" required/>
             <input type="text" placeholder="Digite su apellido" name="apellido" class="ingresar" required/>
             <input type="email" placeholder="Digite su correo electronico:" name="correo" class="ingresar" required/>
@@ -18,5 +19,32 @@
             <button type="submit" class="registro">Registrarse</button>
         </form>
     </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('formRegistro').addEventListener('submit', function(e) {
+                e.preventDefault(); // Evita el envío del formulario
+
+                // Obtener los valores de los campos del formulario
+                let nombre = e.target.nombre.value;
+                let apellido = e.target.apellido.value;
+                let correo = e.target.correo.value;
+                let contraseña = e.target.contraseña.value;
+
+                // Crear un objeto usuario
+                let usuario = {
+                    nombre: nombre,
+                    apellido: apellido,
+                    correo: correo,
+                    contraseña: contraseña
+                };
+
+                // Guardar en localStorage
+                localStorage.setItem('usuario', JSON.stringify(usuario));
+                alert('Usuario registrado exitosamente!');
+                window.location.href = 'login.html'; // Redirigir a la página de inicio de sesión
+            });
+        }
+    </script>
 </body>
 </html>
