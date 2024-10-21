@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos</title>
+    <link rel="stylesheet" href="Style/style7.css">
+    <link rel="icon" href="Imagenes/Logo.jpg" type="image/png">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Pagos y suscripciones</h1>
+        <div class="contenido-principal">
+            <div class="caja1">
+                <h2>PLAN ACTUAL</h2>
+                <div class="caja2"></div>
+                <a href="bienvenida.html" class="menu">Menú principal</a>
+            </div>
+            <div class="formulario">
+                <form onsubmit="confirmarPago(event)">
+                    <input type="text" placeholder="Nombre del Usuario" required>
+                    <input type="text" placeholder="Número de la tarjeta" required>
+                    <input type="text" placeholder="Fecha de la expiración" required>
+                    <input type="text" placeholder="CCV" required>
+                    <input type="text" placeholder="Fecha de la expiración" required>
+                    <button type="submit">PAGAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function confirmarPago(event) {
+            event.preventDefault(); 
+            alert("¡Pago realizado con éxito! Gracias por tu suscripción.");
+        }
+    </script>
+</body>
+</html>
