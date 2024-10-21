@@ -22,7 +22,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    transition: transform 0.2s; /
+    transition: transform 0.2s; 
 }
 
 .report:hover {
